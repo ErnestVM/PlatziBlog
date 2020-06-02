@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platzi Blog</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">Programing Preferences Form</h1>
+          <p id="description" class="description text-center">Thank you to take time to answer this survey</p>
+        </header>
+        <form id="survey-form">
+          <!--user info-->
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="mail">Email</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required>
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number">Age</label>
+            <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age">
+          </div>
+          <!--Questions-->
+          <!--Dropdown-->
+          <div class="form-group" id="dropdown">
+            <label for="job-status">What's your currently job status?</label>
+            <select name="type-job" id="status" class="form-control">
+              <option value="working">Working</option>
+              <option value="BetweenJ">Between Jobs</option>
+              <option value="Part">Part-Time</option>
+            </select>
+          </div>
+          <!--inputQ-->
+          <div class="form-group">
+            <p>What is your currentlu job type?</p>
+            <label><input name="job" value="teccorp" type="radio" class="input-radio" checked>Tecnology Corporation</label>
+            <label><input name="job" value="notec" type="radio" class="input-radio">Non-related to tecnology</label>
+          </div>
+          <!--checkboxQ-->
+          <div class="form-group">
+            <p>What is your prefer subject?</p>
+            <label><input name="prefer" value="frontend" type="checkbox" class="input-checkbox" checked>Frontend</label>
+            <label><input name="prefer" value="backend" type="checkbox" class="input-checkbox">Backend</label>
+            <label><input name="prefer" value="fullstack" type="checkbox" class="input-checkbox">Fullstack</label>
+          </div>
+          <div class="form-group">
+            <p>Do you have any comments or suggestions?</p>
+            <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">Submit</button>
+          </div>
+        </form>
+      
+      </div>
+</body>
+</html>
